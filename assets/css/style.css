@@ -1745,3 +1745,22 @@ section {
     font-size: 13px;
     color: #ddd;
 }
+
+.bottom {
+    position: relative;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.centered-form {
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+
+.centered-form .panel {
+    /* background: rgba(255, 0, 0, 0.473); */
+    box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+    padding: 5px;
+}

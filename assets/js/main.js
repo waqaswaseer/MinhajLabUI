@@ -5,7 +5,7 @@
  * License: https://bootstrapmade.com/license/
  */
 $(document).ready(function() {
-    $('#loginModal').modal('show');
+    $('#loginModal').modal('hide');
     $(function() {
         $('[data-toggle="tooltip"]').tooltip()
     })
