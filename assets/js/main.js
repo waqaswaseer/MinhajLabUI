@@ -1,9 +1,76 @@
 /**
- * Template Name: BizPage - v3.0.0
- * Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
+ API Code for lab Test data fetching
  */
+
+// api url
+const api_url = "http://localhost:55627/api/labtest";
+
+
+// Defining async function
+async function getapi(url) {
+
+    // Storing response
+    const response = await fetch(url);
+
+    // Storing data in form of JSON
+    var data = await response.json();
+    console.log(data);
+    if (response) {
+        hideloader();
+    }
+    Labtest(data);
+    loadTest(data)
+}
+// Calling that async function
+getapi(api_url);
+
+// Function to hide the loader
+function hideloader() {
+    document.getElementById('loading').style.display = 'none';
+}
+// Function to define innerHTML for HTML table
+function Labtest(data) {
+    let tab =
+        `<tr>
+            <th scope="col">Test Code</th>
+            <th scope="col">Test Name</th>
+            <th scope="col">rate</th>
+            <th scope="col">Speciman</th>
+        </tr>`;
+
+    // Loop to access all rows
+    for (let r of data) {
+        tab += `<tr >
+        <th>${r.testcode} </th>
+        <td>${r.testname}</td>
+        <td>${r.rate}</td>
+        <td>${r.speciman}</td>		
+    </tr>`;
+    }
+    // Setting innerHTML as tab variable
+    document.getElementById("employees").innerHTML = tab;
+}
+
+//  Code For API Ends here
+
+// // Load Test in option Selection//
+
+function loadTest(data) {
+    let availibletest = ''
+
+    // Loop to access all rows
+    for (let r of data) {
+        availibletest += `
+        
+        ${r.testname}
+       `;
+    }
+    // Setting innerHTML as tab variable
+    document.getElementById("loadavailibletests").innerHTML = availibletest;
+}
+
+// Code ends Here
+
 $(document).ready(function() {
     $('#loginModal').modal('hide');
     $(function() {

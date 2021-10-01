@@ -45,22 +45,22 @@
 
                     <nav class="nav-menu d-none d-lg-block">
                         <ul>
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li><a href="#about">About Us</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#portfolio">Departments</a></li>
-                            <li><a href="#team">Team</a></li>
+                            <li class=""><a href="index.html">Home</a></li>
+                            <li><a href="index.html#about">About Us</a></li>
+
                             <li class="drop-down"><a href="">Patients</a>
                                 <ul>
-                                    <li><a href="http://182.180.114.149:1260/lims/patients/login.aspx">Online Reports</a></li>
-                                    <li><a href="inner-page.html">Book Lab Test</a></li>
+                                    <li><a href="index.html#services">Services</a></li>
+                                    <li><a href="index.html#portfolio">Departments</a></li>
+                                    <li><a href="index.html#team">Team</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#contact">Contact Us</a></li>
-                            <a class="btn btn-outline-danger m-3" role="button" data-toggle="modal" data-target="#loginModal">
-                                SignIn
-                            </a>
+                            <li><a href="index.html#contact">Contact Us</a></li>
+                            <li><a href="inner-page.html">Book Lab Test</a></li>
+                            <li><a href="http://182.180.114.149:1260/lims/patients/login.aspx">Online Reports</a></li>
+                            <li><a href="index.html#loginModal" role="button" data-toggle="modal" data-target="#loginModal">SignIn</a></li>
                         </ul>
+
 
                     </nav>
                     <!-- .nav-menu -->
@@ -76,14 +76,14 @@
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div class="modal-header border-bottom-0">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div class="">
+                    <button type="button" class="close mr-3 mt-2" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="form-title text-center">
-                        <h4 class="text-danger text-bold">Login</h4>
+                    <div class="text-center">
+                        <h4 class="text-danger text-bold">SignIn Form</h4>
                     </div>
                     <div class="d-flex flex-column text-center">
                         <form role="form " class="signup-Form">
@@ -101,11 +101,11 @@
                             <div class="form-group">
                                 <input type="password" class="form-control" id="password1" placeholder="Your password...">
                             </div>
-                            <button type="button" class="btn btn-outline-danger btn-block btn-round">Login</button>
+                            <button type="button" class="btn btn-outline-danger btn-round">Login</button>
                         </form>
                     </div>
                 </div>
-                <div class="modal-footer d-flex justify-content-center">
+                <div class="modal-footer d-flex justify-content-center mb-3">
                     <div class="signup-section">Not a member yet? <a href="signup page.html" class="text-danger"> Sign Up</a>.</div>
                 </div>
             </div>
@@ -123,7 +123,7 @@
                         <div class="carousel-container">
                             <div class="container">
                                 <h2 class="animate__animated animate__fadeInDown">Home Sampling</h2>
-                                <p>Trusted Lab partner<br> Convenient Home Sampling <br> exclusive Discount</p>
+                                <p>Lab Test Made Easy <br> Blood Test at Home</p>
                                 <a href="inner-page.html" class="btn-get-started scrollto animate__animated animate__fadeInUp">Book Test</a>
                             </div>
                         </div>
@@ -144,7 +144,9 @@
                         <div class="carousel-container">
                             <div class="container">
                                 <h2 class="animate__animated animate__fadeInDown">Working Time</h2>
-                                <p class="animate__animated animate__fadeInUp">For emergencies – 24 / 7 <br> All Days – 8:30 AM to 5:00 PM
+                                <p class="animate__animated animate__fadeInUp">Monday - Satureday <br> 8:00 AM To 11:00 PM
+                                </p>
+                                <p class="animate__animated animate__fadeInUp">Sunday <br> 8:00 AM To 8:00 PM
                                 </p>
                                 <a href="#featured-services" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Schedule</a>
                             </div>
@@ -209,14 +211,27 @@
 
                 <header class="section-header">
                     <h3>About Us</h3>
-                    <p>MinhajLab consolidates local and international healthcare services on its digital portal and provides access to the patients at discounted rates. It also educates patients and guide them to use the services using artificial intelligence.
-                        Services include ordering and comparing prices of imaging & lab tests with home sampling, scheduling of home care services, referral guidance for outpatient procedures or surgeries and appointments with local physicians as well
-                        as access to International expert physicians for second opinion.</p>
+                    <p>
+                        MinhajLab consolidates local and international healthcare services on its digital portal and provides access to the patients at discounted rates. It also educates patients and guide them to use the services using artificial intelligence. Services include
+                        ordering and comparing prices of imaging & lab tests with home sampling, scheduling of home care services, referral guidance for outpatient procedures or surgeries and appointments with local physicians as well as access to International
+                        expert physicians for second opinion.</p>
                 </header>
 
-                <div class="row about-cols">
-
+                <div class="row about-cols ">
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="about-col">
+                            <div class="img">
+                                <img src="assets/img/about-plan.jpg" alt="" class="img-fluid">
+                                <div class="icon"><i class="ion-ios-list-outline"></i></div>
+                            </div>
+                            <h2 class="title"><a href="#">Our Plan</a></h2>
+                            <p>
+                                Supporting a clear regulatory framework and market pathway for new, innovative laboratory diagnostics, including laboratory developed tests (LDTs) and in-vitro diagnostics.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 " data-aos="fade-up" data-aos-delay="200">
                         <div class="about-col">
                             <div class="img">
                                 <img src="assets/img/about-mission.jpg" alt="" class="img-fluid">
@@ -230,18 +245,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="about-col">
-                            <div class="img">
-                                <img src="assets/img/about-plan.jpg" alt="" class="img-fluid">
-                                <div class="icon"><i class="ion-ios-list-outline"></i></div>
-                            </div>
-                            <h2 class="title"><a href="#">Our Plan</a></h2>
-                            <p>
-                                Supporting a clear regulatory framework and market pathway for new, innovative laboratory diagnostics, including laboratory developed tests (LDTs) and in-vitro diagnostics.
-                            </p>
-                        </div>
-                    </div>
+
 
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                         <div class="about-col">
@@ -276,7 +280,7 @@
 
                     <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="100">
                         <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-                        <h4 class="title"><a href="">Labortary</a></h4>
+                        <h4 class="title"><a href="">Laboratory</a></h4>
                         <p class="description">Clinical laboratory services means professional and technical laboratory services provided by an independent clinical laboratory when ordered by a physician or other licensed practitioner of the healing arts within the scope of
                             his or her practice as defined by the laws of the state in which he or she practices.</p>
                     </div>
@@ -438,76 +442,74 @@
 
                 <div class="row justify-content-center">
 
-                    <div class="col-lg-2 col-md-4">
+                    <div class="col-lg-4 col-md-4">
                         <div class="member" data-aos="fade-up" data-aos-delay="100">
+
                             <img src="assets/img/team-1.jpg" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Dr. Haroon Habib</h4>
-                                    <span>Assistant Professor</span>
-                                    <span>M.B.B.S.</span>
-                                    <span>M.phil (Biochem) </span>
-                                    <span>PhD Scholar (Biochem)</span>
-                                    <!--  -->
-                                </div>
-                            </div>
+                            <h4>Dr. Haroon Habib</h4>
+                            <span>Assistant Professor</span>
+                            <span>M.B.B.S.</span>
+                            <span>M.phil (Biochem) </span>
+                            <span>PhD Scholar (Biochem)</span>
+                            <!--  -->
+
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-md-4">
+                    <div class="col-lg-4 col-md-4">
                         <div class="member" data-aos="fade-up" data-aos-delay="200">
                             <img src="assets/img/team-1.jpg" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Dr. Sajjad Ullah</h4>
-                                    <span>M.Phil Molecular Biology (CEMB)</span>
-                                    <span>PhD Human Genetics & Molecular</span>
-                                    <span>Biology (UHS). Molecular Biologist</span>
-                                    <!--  -->
-                                </div>
-                            </div>
+                            <!-- <div class="">
+                                <div class=""> -->
+                            <h4>Dr. Sajjad Ullah</h4>
+                            <span>M.Phil Molecular Biology (CEMB)</span>
+                            <span>PhD Human Genetics & Molecular</span>
+                            <span>Biology (UHS). Molecular Biologist</span>
+                            <!--  -->
+                            <!-- </div>
+                            </div> -->
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-md-4">
+                    <div class="col-lg-4 col-md-4">
                         <div class="member" data-aos="fade-up" data-aos-delay="300">
                             <img src="assets/img/team-1.jpg" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Dr. Romman-Ul-Haq</h4>
-                                    <span>Consultant Radiolpogist</span>
-                                    <span>Services Hospital</span>
+                            <!-- <div class="">
+                                <div class=""> -->
+                            <h4>Dr. Romman-Ul-Haq</h4>
+                            <span>Consultant Radiolpogist</span>
+                            <span>Services Hospital</span>
 
-                                    <!--  -->
-                                </div>
-                            </div>
+                            <!--  -->
+                            <!-- </div>
+                            </div> -->
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-md-4">
+                    <div class="col-lg-4 col-md-4">
                         <div class="member" data-aos="fade-up" data-aos-delay="400">
                             <img src="assets/img/team-1.jpg" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Dr. Rahila Khalid</h4>
-                                    <span>M.B.B.S, MCPS</span>
-                                    <span>Radiolpogist</span>
-                                    <!--  -->
-                                </div>
-                            </div>
+                            <!-- <div class="">
+                                <div class=""> -->
+                            <h4>Dr. Rahila Khalid</h4>
+                            <span>M.B.B.S, MCPS</span>
+                            <span>Radiolpogist</span>
+                            <!--  -->
+                            <!-- </div>
+                            </div> -->
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4">
+                    <div class="col-lg-4 col-md-4">
                         <div class="member" data-aos="fade-up" data-aos-delay="400">
                             <img src="assets/img/team-1.jpg" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Amir Mustafa</h4>
-                                    <span>M.Sc. (PU), B.Sc. (MLT) PU</span>
-                                    <span>Sr. Medical Technologist</span>
-                                    <!--  -->
-                                </div>
-                            </div>
+                            <!-- <div class="">
+                                <div class=""> -->
+                            <h4>Amir Mustafa</h4>
+                            <span>M.Sc. (PU), B.Sc. (MLT) PU</span>
+                            <span>Sr. Medical Technologist</span>
+                            <!--  -->
+                            <!-- </div>
+                            </div> -->
                         </div>
                     </div>
 

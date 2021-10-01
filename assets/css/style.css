@@ -125,59 +125,6 @@ h6 {
 
 
 /*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
-
-#header {
-    transition: all 0.5s;
-    z-index: 997;
-    padding: 26px 0;
-    background: rgba(0, 0, 0, 0.9);
-}
-
-#header.header-transparent {
-    background: transparent;
-}
-
-#header.header-scrolled {
-    background: rgb(255, 255, 255);
-    padding: 18px 0;
-}
-
-#header .logo {
-    font-size: 34px;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    letter-spacing: 3px;
-    padding-left: 10px;
-    border-left: 4px solid #d21818;
-}
-
-#header .logo a {
-    color: rgb(14, 13, 13);
-}
-
-#header .logo img {
-    max-height: 40px;
-}
-
-@media (max-width: 992px) {
-    #header img {
-        width: 250px;
-    }
-}
-
-@media (max-width: 400px) {
-    #header .logo {
-        font-size: 28px;
-    }
-}
-
-
-/*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 
@@ -720,6 +667,17 @@ section {
 
 /* About Us Section
 --------------------------------*/
+
+.opomov {
+    display: table;
+}
+
+.opomov [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+    height: 250px;
+}
 
 #about {
     background: url("../img/about-bg.jpg") center top no-repeat fixed;
@@ -1347,6 +1305,13 @@ section {
 /* Team Section
 --------------------------------*/
 
+
+/* .imagelagiani {
+    background-image: url("/assets/img/team-1.jpg");
+    height: 500px;
+    width: auto;
+} */
+
 #team {
     background: #fff;
     padding: 60px 0;
@@ -1355,7 +1320,7 @@ section {
 #team .member {
     text-align: center;
     margin-bottom: 20px;
-    background: #000;
+    /* background: rgba(245, 7, 7, 0.774); */
     position: relative;
 }
 
@@ -1378,7 +1343,7 @@ section {
 }
 
 #team .member:hover .member-info {
-    background: rgba(0, 0, 0, 0.7);
+    /* background: rgba(245, 7, 7, 0.7); */
     opacity: 1;
     transition: 0.4s;
 }
@@ -1392,14 +1357,14 @@ section {
     font-weight: 700;
     margin-bottom: 2px;
     font-size: 18px;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 #team .member span {
     font-style: italic;
     display: block;
     font-size: 13px;
-    color: #fff;
+    color: rgb(245, 0, 0);
 }
 
 #team .member .social {

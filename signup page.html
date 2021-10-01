@@ -45,22 +45,22 @@
 
                     <nav class="nav-menu d-none d-lg-block">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li class=""><a href="index.html">Home</a></li>
                             <li><a href="index.html#about">About Us</a></li>
-                            <li><a href="index.html#services">Services</a></li>
-                            <li><a href="index.html#portfolio">Departments</a></li>
-                            <li><a href="index.html#team">Team</a></li>
+
                             <li class="drop-down"><a href="">Patients</a>
                                 <ul>
-                                    <li><a href="http://182.180.114.149:1260/lims/patients/login.aspx">Online Reports</a></li>
-                                    <li><a href="inner-page.html">Book Lab Test</a></li>
+                                    <li><a href="index.html#services">Services</a></li>
+                                    <li><a href="index.html#portfolio">Departments</a></li>
+                                    <li><a href="index.html#team">Team</a></li>
                                 </ul>
                             </li>
                             <li><a href="index.html#contact">Contact Us</a></li>
-                            <a class="btn btn-outline-danger m-3" role="button" data-toggle="modal" data-target="index.html#loginModal">
-                                SignIn
-                            </a>
+                            <li><a href="inner-page.html">Book Lab Test</a></li>
+                            <li><a href="http://182.180.114.149:1260/lims/patients/login.aspx">Online Reports</a></li>
+                            <li><a href="index.html#loginModal">SignIn</a></li>
                         </ul>
+
 
                     </nav>
                     <!-- .nav-menu -->
@@ -117,13 +117,13 @@
                         <div class="row">
                             <div class="col-xs-6 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password" data-rule="minlen:4" data-msg="Choose a strong password">
+                                    <input type="password" name="password" id="password" maxlength="8" class="form-control input-sm" placeholder="Password" data-rule="minlen:4" data-msg="Choose a strong password">
                                     <div class="validate"></div>
                                 </div>
                             </div>
                             <div class="col-xs-6 col-sm-6 col-md-6">
                                 <div class="form-group">
-                                    <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirm Password" data-rule="minlen:4 " data-msg="password must be matched">
+                                    <input type="password" name="password_confirmation" maxlength="8" id="password_confirmation" class="form-control input-sm" placeholder="Confirm Password" data-rule="minlen:4 " data-msg="password must be matched">
                                     <div class="validate"></div>
                                 </div>
                             </div>

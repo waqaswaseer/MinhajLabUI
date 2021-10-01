@@ -37,7 +37,7 @@
     <header id="header" class="fixed-top header-transparent">
         <div class="container-fluid">
 
-            <div class="row justify-content-center">
+            <div class="row justify-content-center ">
                 <div class="col-xl-11 d-flex align-items-center">
 
                     <!-- Uncomment below if you prefer to use an image logo -->
@@ -47,18 +47,18 @@
                         <ul>
                             <li class=""><a href="index.html">Home</a></li>
                             <li><a href="index.html#about">About Us</a></li>
-                            <li><a href="index.html#services">Services</a></li>
-                            <li><a href="index.html#portfolio">Departments</a></li>
-                            <li><a href="index.html#team">Team</a></li>
-                            <li class="drop-down"><a href="">Drop Down</a>
+
+                            <li class="drop-down"><a href="">Patients</a>
                                 <ul>
-                                    <li><a href="#">Online Reports</a></li>
-                                    <li><a href="inner-page.html">Book Lab Test</a></li>
+                                    <li><a href="index.html#services">Services</a></li>
+                                    <li><a href="index.html#portfolio">Departments</a></li>
+                                    <li><a href="index.html#team">Team</a></li>
                                 </ul>
                             </li>
                             <li><a href="index.html#contact">Contact Us</a></li>
-                            <!-- <a class="btn btn-outline-danger ml-3 myl" role="button" data-toggle="modal" data-target="#loginModal">
-                SignIn</a> -->
+                            <li><a href="inner-page.html">Book Lab Test</a></li>
+                            <li><a href="http://182.180.114.149:1260/lims/patients/login.aspx">Online Reports</a></li>
+                            <li><a href="index.html#loginModal" target="#loginModal">SignIn</a></li>
                         </ul>
 
                     </nav>
@@ -94,8 +94,14 @@
                 <div class="card">
                     <!-- <img class="card-img-top" src=".../100px180/" alt="Card image cap"> -->
                     <div class="card-body">
+
                         <h5 class="card-title">Availible Tests</h5>
-                        <p class="card-text ">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <div class="d-flex justify-content-center">
+                            <div class="spinner-border" role="status" id="loading">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                        </div>
+                        <table id="employees" class="table"></table>
                     </div>
                 </div>
                 <div class="card" id="card">
@@ -103,19 +109,29 @@
                     <div class="card-body">
                         <form>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="First name">
-                                <input type="text" class="form-control" placeholder="Last name">
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                <input type="text" name="Name" id="Name" class="form-control input-sm" placeholder="Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                                <div class="validate"></div>
                             </div>
                             <div class="form-group">
+                                <input type="text" name="FName" id="FName" class="form-control input-sm" placeholder="Father Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                                <div class="validate"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="Phone" id="Phone" class="form-control input-sm" placeholder="Phone No." data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                                <div class="validate"></div>
+                            </div>
+                            <!-- <input type="text" class="form-control form-group" placeholder="Last name"> -->
+                            <!-- <input type="email" class="form-control form-group" id="exampleFormControlInput1" placeholder="name@example.com"> -->
+
+                            <div class="form-group">
                                 <select class="form-control" id="exampleFormControlSelect1">
-                  <option>Select test</option>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
+                                    <option>Select test</option>
+                                    <option value="${r.testcode}" id="loadavailibletests">${r.testname}</option>
+                                    <!-- <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option> -->
+                                </select>
                             </div>
 
                         </form>
@@ -127,7 +143,7 @@
                                 <label for="exampleFormControlFile1">Attach Prescription</label>
                                 <input type="file" class="form-control-file" id="exampleFormControlFile1">
                             </div>
-                            <button class="btn btn-danger " style="height: 50px;">submit</button>
+                            <button class="btn btn-outline-danger " type="submit" style="height: 50px;">submit</button>
                         </form>
                     </div>
                 </div>
@@ -193,6 +209,7 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/php-email-form/signupValidation.js"></script>
     <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
     <script src="assets/vendor/counterup/counterup.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
